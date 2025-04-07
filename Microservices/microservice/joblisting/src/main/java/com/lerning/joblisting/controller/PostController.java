@@ -49,6 +49,13 @@ public class PostController {
 		return postRepo.findAll();
 	}
 	
+	@GetMapping("/allPost")
+	public List<Post> getAllPosts2(){
+		
+		
+		return postRepo.findAll();
+	}
+	
 	@GetMapping("/getByExp/{exp}")
 	public Optional<Post> getByExp(@PathVariable String exp){
 		
