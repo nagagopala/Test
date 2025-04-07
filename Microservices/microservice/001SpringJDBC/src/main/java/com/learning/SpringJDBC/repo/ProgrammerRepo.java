@@ -51,5 +51,8 @@ public class ProgrammerRepo {
 		int rows=jdbctemp.update(sql, pid,pName,pLanguage);
 		System.out.println("rows effected "+rows);
 	}
+	public void message() {
+		System.out.println("message");
+	}
 
 }
